@@ -13,7 +13,7 @@
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
-    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
+    "build": "yarn format && yarn clean-build && yarn compile && yarn copy-templates",
     "prepublishOnly": "yarn build",
     "test": "jest",
     "watch": "jest --watch",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
-    "@types/node": "^14.14.6",
+    "@types/node": "^12.7.11",
     "jest": "^24.1.0",
     "prettier": "^1.12.1",
     "ts-jest": "^24.1.0",
